@@ -85,6 +85,7 @@ REST_FRAMEWORK = {
     )
 }
 
+ALLOWED_HOSTS = ['*', '846c63b86bfd.ngrok-free.app', 'location11.vercel.app']
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [
