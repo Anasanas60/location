@@ -54,7 +54,7 @@ function App() {
   // Registration handler
   const handleRegister = (e) => {
   e.preventDefault();
-  fetch("https://96f8ae756cd6.ngrok-free.app//api/locations/register/", {
+  fetch("https://d58e62c5f7f4.ngrok-free.app//api/locations/register/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -83,7 +83,7 @@ function App() {
   // Handle login
   const handleLogin = (e) => {
     e.preventDefault();
-    fetch("https://96f8ae756cd6.ngrok-free.app/api/token/", {
+    fetch("https://d58e62c5f7f4.ngrok-free.app/api/token/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password }),
@@ -104,7 +104,7 @@ function App() {
 
   // Send your location to Django
   const sendLocation = (accessToken) => {
-    fetch("https://96f8ae756cd6.ngrok-free.app/api/locations/update/", {
+    fetch("https://d58e62c5f7f4.ngrok-free.app/api/locations/update/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -120,7 +120,7 @@ function App() {
 
   // Fetch all friends' locations
   const fetchLocations = (accessToken) => {
-    fetch("https://96f8ae756cd6.ngrok-free.app/api/locations/", {
+    fetch("https://d58e62c5f7f4.ngrok-free.app/api/locations/", {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
