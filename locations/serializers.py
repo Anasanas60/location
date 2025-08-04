@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Location
+from django.contrib.auth.models import User
 
 class LocationSerializer(serializers.ModelSerializer):
     user = serializers.StringRelatedField(read_only=True)
@@ -7,10 +8,6 @@ class LocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Location
         fields = ['user', 'latitude', 'longitude', 'status', 'updated_at']
-        
-        
-        from rest_framework import serializers
-from django.contrib.auth.models import User
 
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
