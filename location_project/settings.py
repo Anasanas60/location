@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-kv-_n%&q_d@fmplw%03-z%2az_v*e%o0&_vbpn4s)*l5!3wr3m'
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '846c63b86bfd.ngrok-free.app']  # <-- Add your ngrok domain here
+ALLOWED_HOSTS = ['*', 'https://ffe71eb7ae4d.ngrok-free.app']  # <-- Add your ngrok domain here
 
 INSTALLED_APPS = [
     'corsheaders',
@@ -85,7 +85,7 @@ REST_FRAMEWORK = {
     )
 }
 
-ALLOWED_HOSTS = ['*', '846c63b86bfd.ngrok-free.app', 'location11.vercel.app']
+ALLOWED_HOSTS = ['*', 'https://ffe71eb7ae4d.ngrok-free.app', 'location11.vercel.app']
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [
